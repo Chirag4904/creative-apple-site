@@ -28,7 +28,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 20%;
-  min-height: 10vh;
+  min-height: 7.5vh;
   background: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -86,6 +86,7 @@ nav a {
   z-index: 2;
   text-align: center;
   padding-bottom: 10rem;
+  height: auto;
 }
 
 .first-page-title {
@@ -98,5 +99,35 @@ nav a {
 
 .intro-video {
   position: absolute;
+}
+
+.second-page {
+  min-height: 125vh;
+  color: rgba(255, 255, 255, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.smoke-video {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+.second-text {
+  padding: 5% 30%;
+  position: relative;
+  z-index: 2;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
