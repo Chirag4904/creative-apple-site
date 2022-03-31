@@ -163,3 +163,64 @@ nav {
 	font-size: 0.8rem;
 	font-weight: bold;
 }
+
+//fourth page
+.fourth-page {
+	min-height: 100vh;
+	display: flex;
+	position: relative;
+}
+
+.purchase-left {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+}
+
+.phone-gallery {
+	display: flex;
+	align-self: flex-start;
+
+	img {
+		transform: scale(0.8);
+	}
+}
+
+.phone-gallery-container {
+	min-width: 50vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.swatch-container {
+	text-align: center;
+	span {
+		font-size: 0.8rem;
+	}
+}
+
+.swatches {
+	img {
+		padding: 0.5rem 0.3rem;
+		cursor: pointer;
+	}
+}
+
+.purchase-right {
+	flex: 1;
+	// width: 50vw;
+	position: relative;
+	background: black;
+
+	img {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform-origin: bottom;
+		transform: translate(-50%, 0%) scale(0.8);
+	}
+}
