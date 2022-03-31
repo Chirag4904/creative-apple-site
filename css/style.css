@@ -127,7 +127,70 @@ nav a {
   padding: 5% 30%;
   position: relative;
   z-index: 2;
-  font-size: 3.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.third-page {
+  position: relative;
+  padding: 0% 20%;
+}
+
+.product-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+}
+
+.phone-size {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.pro-size {
+  text-align: right;
+}
+
+.max-size {
+  text-align: left;
+}
+
+.product-images {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.large-phone {
+  position: relative;
+  -webkit-transform: translateX(40%) scale(0.8);
+          transform: translateX(40%) scale(0.8);
+  z-index: 1;
+}
+
+.small-phone {
+  position: relative;
+  -webkit-transform: translateX(-40%) scale(0.8);
+          transform: translateX(-40%) scale(0.8);
+  z-index: 2;
+}
+
+.retina-line {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -15%);
+          transform: translate(-50%, -15%);
+  font-size: 0.8rem;
   font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
