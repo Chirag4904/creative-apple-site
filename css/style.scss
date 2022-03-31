@@ -224,3 +224,43 @@ nav {
 		transform: translate(-50%, 0%) scale(0.8);
 	}
 }
+
+//fifth-page
+.fifth-page {
+	position: relative;
+	min-height: 100vh;
+
+}
+
+.product-video {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.product-info-container {
+	z-index: 2;
+	position: relative;
+	align-items: center;
+	color: white;
+	display: flex;
+	min-height: 100vh;
+	justify-content: space-between;
+	padding: 0% 10rem;
+}
+
+.right-info, .left-info {
+	width: 20%;
+
+	h3{
+		padding: 3rem 0;
+		color: rgb(193,193,193);
+	}
+
+	span {
+		font-size: 1.5rem;
+		color: rgb(209, 209, 209);
+	}
+}

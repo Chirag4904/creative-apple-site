@@ -278,4 +278,49 @@ nav a {
   -webkit-transform: translate(-50%, 0%) scale(0.8);
           transform: translate(-50%, 0%) scale(0.8);
 }
+
+.fifth-page {
+  position: relative;
+  min-height: 100vh;
+}
+
+.product-video {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+.product-info-container {
+  z-index: 2;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0% 10rem;
+}
+
+.right-info, .left-info {
+  width: 20%;
+}
+
+.right-info h3, .left-info h3 {
+  padding: 3rem 0;
+  color: #c1c1c1;
+}
+
+.right-info span, .left-info span {
+  font-size: 1.5rem;
+  color: #d1d1d1;
+}
 /*# sourceMappingURL=style.css.map */
