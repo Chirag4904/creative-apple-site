@@ -38,3 +38,40 @@ const tlHRemove = gsap.timeline({
 });
 
 tlHRemove.to(".highlight", { color: "rgba(255,255,255,0.4)", stagger: 1 });
+
+//page 3
+const tlSplit = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".third-page",
+		start: "-25%",
+		end: "30%",
+		scrub: true,
+	},
+});
+
+tlSplit.fromTo(".large-phone", { x: "40%" }, { x: "20%" });
+tlSplit.fromTo(".small-phone", { x: "-40%" }, { x: "-20%" }, "<");
+tlSplit.fromTo(
+	".product-text-left",
+	{ x: "0%", opacity: 0 },
+	{ x: "-50%", opacity: 1 },
+	"<"
+);
+tlSplit.fromTo(
+	".product-text-right",
+	{ x: "0%", opacity: 0 },
+	{ x: "50%", opacity: 1 },
+	"<"
+);
+
+tlSplit.fromTo(".retina-line", { opacity: 0 }, { opacity: 1 }, "<");
+
+const tlSplitPin = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".third-page",
+		start: "0%",
+		end: "100%",
+		pin: true,
+		pinSpacing: false,
+	},
+});
