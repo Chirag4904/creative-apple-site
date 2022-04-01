@@ -75,3 +75,31 @@ const tlSplitPin = gsap.timeline({
 		pinSpacing: false,
 	},
 });
+
+//caraousel
+const swatches = document.querySelectorAll(".swatches img");
+const gallery = document.querySelector(".phone-gallery");
+const slides = document.querySelectorAll(".phone-gallery-container");
+
+let currentSwatch = "blue";
+let topIndex = 2;
+
+swatches.forEach((swatch, index) => {
+	const coord = slides[index].getBoundingClientRect().left;
+	swatch.addEventListener("click", (e) => {
+		let swatchName = e.target.getAttribute("swatch");
+		let closeup = document.querySelector("." + swatchName);
+
+		//check if on same swatch
+		if (currentSwatch === swatchName) return;
+
+		gsap.set(closeup, { zIndex: topIndex });
+		gsap.fromTo(closeup, { opacity: 0 }, { opacity: 1, duration: 1 });
+
+		//Gallery
+		console.log(coord);
+		gsap.to(gallery, { x: -coord, duration: 1, ease: "back.out(1)" });
+		topIndex++;
+		currentSwatch = swatchName;
+	});
+});

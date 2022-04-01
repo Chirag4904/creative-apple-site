@@ -285,6 +285,10 @@ nav a {
           transform: translate(-50%, 0%) scale(0.8);
 }
 
+.blue {
+  z-index: 1;
+}
+
 .fifth-page {
   position: relative;
   min-height: 100vh;
