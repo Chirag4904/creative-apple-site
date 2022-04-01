@@ -264,3 +264,52 @@ nav {
 		color: rgb(209, 209, 209);
 	}
 }
+
+//6th page
+.sixth-page {
+	min-height: 100vh;
+	padding: 10% 20%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.portrait {
+	height: 70vh;
+}
+
+.photo-title {
+	font-size: 2rem;
+}
+
+.photo-subtitle {
+	font-size: 3rem;
+	width: 70%;
+}
+
+.phone-video {
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+	transform: translate(-40%,0%);
+	z-index: 2;
+
+	img, video {
+		position: absolute;
+		transform: scale(0.7);
+	}
+
+	img {
+		z-index: 2;
+		bottom: 0;
+		left: 0;
+	}
+
+	video {
+		left: 1rem;
+		bottom: 1rem;
+		border-radius: 1.5rem;
+	}
+}
+
