@@ -3,6 +3,11 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
+	// overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+	display: none;
 }
 
 a,
@@ -65,6 +70,7 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+
 }
 
 .first-page-text {
@@ -82,6 +88,7 @@ nav {
 
 .intro-video {
 	position: absolute;
+	width: 100vw;
 }
 
 //second page css
