@@ -336,7 +336,7 @@ nav a {
 
 .sixth-page {
   min-height: 100vh;
-  padding: 10% 20%;
+  padding: 10% 14%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,7 +356,6 @@ nav a {
 
 .photo-subtitle {
   font-size: 3rem;
-  width: 70%;
 }
 
 .phone-video {
